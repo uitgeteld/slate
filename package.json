@@ -1,0 +1,26 @@
+{
+  "name": "slate",
+  "version": "1.0.0",
+  "description": "Slate is lightweight app integrated with canvacore's image manipulation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "setinamoment"
+  },
+  "keywords": [
+    "slate",
+    "canvacore",
+    "lightweight",
+    "iamge",
+    "manipulation"
+  ],
+  "author": "uitgeteld",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "electron": "^38.2.2"
+  }
+}
