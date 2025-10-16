@@ -4,8 +4,37 @@
   "description": "Slate is lightweight app integrated with canvacore's image manipulation",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.slate.app",
+    "productName": "Slate",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "!assets/generated"
+    ],
+    "win": {
+      "icon": "assets/icons/slate.ico",
+      "target": [
+        "nsis"
+      ]
+    },
+    "mac": {
+      "icon": "assets/icons/slate.icns"
+    },
+    "linux": {
+      "icon": "assets/icons/slate.png",
+      "target": [
+        "AppImage"
+      ]
+    }
   },
   "repository": {
     "type": "git",
@@ -22,5 +51,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "electron": "^38.2.2"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12"
   }
 }
