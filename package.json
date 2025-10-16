@@ -4,11 +4,13 @@
   "description": "Slate is lightweight app integrated with canvacore's image manipulation",
   "main": "main.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "start": "electron .",
-    "dist": "electron-builder",
-    "dist:win": "electron-builder --win",
-    "dist:mac": "electron-builder --mac",
-    "dist:linux": "electron-builder --linux"
+    "dist": "npm run build && electron-builder", 
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:linux": "npm run build && electron-builder --linux"
   },
   "build": {
     "appId": "com.slate.app",
@@ -38,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "setinamoment"
+    "url": "https://github.com/uitgeteld/slate"
   },
   "keywords": [
     "slate",
@@ -50,7 +52,10 @@
   "author": "uitgeteld",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "electron": "^38.3.0",
-    "electron-builder": "^26.0.12"
+    "electron-builder": "^26.0.12",
+    "svelte": "^5.40.1",
+    "vite": "^7.1.10"
   }
 }

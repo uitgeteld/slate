@@ -1,5 +1,5 @@
 const { app, BrowserWindow, Menu } = require('electron');
-const path = require("node:path")
+const path = require("node:path");
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -12,7 +12,9 @@ function createWindow() {
     },
   });
   Menu.setApplicationMenu(null);
-  win.loadFile('renderer/index.html');
+
+  win.loadFile('dist/renderer/index.html');
+  // win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);
