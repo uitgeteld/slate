@@ -5,7 +5,7 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 900,
     height: 600,
-    icon: path.join(__dirname, 'assets/icon256.ico'),
+    icon: path.join(__dirname, 'assets/icons/slate.png'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
