@@ -3,15 +3,12 @@
 </script>
 
 <main>
-  <h1>Slate</h1>
   <img src={slateIcon} alt="Slate Icon" width="128" />
+  <h1>Slate</h1>
 </main>
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
+<style lang="scss">
+  $primary-color: #323232;
 
   main {
     display: flex;
@@ -19,12 +16,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1e1e1e;
+    background-color: $primary-color;
     color: #f5f5f5;
     font-family: system-ui, sans-serif;
-  }
 
-  img {
-    margin-top: 1rem;
+    img {
+      margin-bottom: 1rem;
+    }
   }
 </style>

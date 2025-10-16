@@ -55,7 +55,9 @@
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "electron": "^38.3.0",
     "electron-builder": "^26.0.12",
+    "sass": "^1.93.2",
     "svelte": "^5.40.1",
+    "svelte-preprocess": "^6.0.3",
     "vite": "^7.1.10"
   }
 }
