@@ -49,10 +49,8 @@
   ],
   "author": "uitgeteld",
   "license": "Apache-2.0",
-  "dependencies": {
-    "electron": "^38.2.2"
-  },
   "devDependencies": {
+    "electron": "^38.3.0",
     "electron-builder": "^26.0.12"
   }
 }
